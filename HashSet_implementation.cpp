@@ -19,12 +19,19 @@ int main() {
     // size of set
     cout<<"size of set are :"<<set.size()<<endl;
 
+ // delete single element in set 
+ if(set.erase(6)){
+     cout<<"deleting successefuuly...."<<endl;
+ }
+//   set.erase(6);
+
+  cout<<"size of set are :"<<set.size()<<endl;
     // seraching of set 
     if(set.find(6) == set.end()){
-            cout<< " not found" << endl << endl ;
+            cout<< "searching element not found" << endl << endl ;
     }
         else{
-            cout << "Found "<< endl ;
+            cout << "searching element are found "<< endl ;
     }
     
     // iterator 
@@ -35,5 +42,12 @@ int main() {
         cout<< (*itr)<<endl;
     }
 
+// clear set
+  set.clear();
+cout<<"set are empty"<<endl;
+    
+    for(itr=set.begin(); itr!=set.end(); itr++){
+        cout<< (*itr)<<endl;
+    }
     return 0;
 }
