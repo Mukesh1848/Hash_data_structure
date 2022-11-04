@@ -41,6 +41,11 @@ int main() {
     for(itr=set.begin(); itr!=set.end(); itr++){
         cout<< (*itr)<<endl;
     }
+        
+          // check element present are not 
+    if(set.count(3)){
+       cout<<"count present yes"<<endl;
+    }
 
 // clear set
   set.clear();
